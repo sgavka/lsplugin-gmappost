@@ -1,0 +1,72 @@
+#gmap-map-page {
+    width: 100%;
+    height: 500px;
+}
+
+#gmap-map-topic {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.gmap-btn {
+    margin-bottom: 10px;
+}
+
+.gmap-slow-showmap {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 300px;
+    width: 100%;
+    -webkit-transition: all 0.0s ease-in-out;
+    -moz-transition: all 0.0s ease-in-out;
+    -o-transition: all 0.0s ease-in-out;
+    -ms-transition: all 0.0s ease-in-out;
+    transition: all 0.0s ease-in-out;
+    -webkit-transform: translateY(-400px);
+    -moz-transform: translateY(-400px);
+    -o-transform: translateY(-400px);
+    -ms-transform: translateY(-400px);
+}
+
+.gmap-slow-showmap.active {
+    position: relative;
+    z-index: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transition: all 0.0s ease-in-out;
+}
+
+.controls {
+    margin-top: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#gmap-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+#gmap-input:focus {
+    border-color: #4d90fe;
+}
+
+.gmap-container {
+    font-family: Roboto;
+}

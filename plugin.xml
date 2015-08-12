@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>
+        <lang name="default">GMapPost</lang>
+    </name>
+    <author>
+        <lang name="default">Gavka S.</lang>
+    </author>
+    <homepage>https://github.com/sgavka/</homepage>
+    <version>1.0.0</version>
+    <requires>
+        <livestreet>1.0.3</livestreet>
+        <plugins>
+        </plugins>
+    </requires>
+    <description>
+        <lang name="default">Topic link to Google (or or another) map position.</lang>
+    </description>
+</plugin>
