@@ -22,6 +22,7 @@ $config = array(
             'mapTypeId' => 'ROADMAP',
             'streetViewControl' => false,
             'panControl' => false,
+            'scrollwheel' => false,
         ),
         'topicAdd' => array(
             'elementId' => 'gmap-map-topic',
@@ -37,6 +38,7 @@ $config = array(
             'mapTypeId' => 'ROADMAP',
             'streetViewControl' => false,
             'panControl' => false,
+            'scrollwheel' => true,
         ),
     ),
     'tile_layers' => array(

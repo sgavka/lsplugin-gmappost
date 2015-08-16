@@ -52,6 +52,7 @@ function createMap(config) {
         //mapTypeControl: false, // map/sputnik
         streetViewControl: config.streetViewControl,
         panControl: config.panControl,
+        scrollwheel: config.scrollwheel,
         mapTypeControlOptions: {
             mapTypeIds: mapTypeIds
         },
