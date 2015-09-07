@@ -6,7 +6,7 @@ class PluginGmappost_ModuleTopic_MapperTopic extends PluginGmappost_Inherit_Modu
     {
         $sql = "UPDATE " . Config::Get('db.table.topic') . " AS _t
                 SET _t.topic_g_lat = ?f,
-                    _t.topic_g_long = ?f
+                    _t.topic_g_lng = ?f
                 WHERE
                     _t.topic_id = ?d ";
 
@@ -19,7 +19,7 @@ class PluginGmappost_ModuleTopic_MapperTopic extends PluginGmappost_Inherit_Modu
     {
         $sql = "UPDATE " . Config::Get('db.table.topic') . " AS _t
                 SET _t.topic_g_lat = NULL,
-                    _t.topic_g_long = NULL
+                    _t.topic_g_lng = NULL
                 WHERE
                     _t.topic_id = ?d ";
 
@@ -41,8 +41,8 @@ class PluginGmappost_ModuleTopic_MapperTopic extends PluginGmappost_Inherit_Modu
                 WHERE
                     _t.topic_g_lat >= ?f
                     AND _t.topic_g_lat < ?f
-                    AND _t.topic_g_long >= ?f
-                    AND _t.topic_g_long < ?f
+                    AND _t.topic_g_lng >= ?f
+                    AND _t.topic_g_lng < ?f
                     AND _t.topic_publish = 1";
 
         $aTopicsId = array();
