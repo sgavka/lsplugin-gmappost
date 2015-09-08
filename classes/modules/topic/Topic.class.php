@@ -4,7 +4,7 @@ class PluginGmappost_ModuleTopic extends PluginGmappost_Inherit_ModuleTopic
 {
     public function UpdateGeoData($oTopic)
     {
-        if (is_null($oTopic->getgLat()) && is_null($oTopic->getgLong())) {
+        if (is_null($oTopic->getgLat()) && is_null($oTopic->getgLng())) {
             return $this->oMapperTopic->DeleteGeoData($oTopic);
         }
 

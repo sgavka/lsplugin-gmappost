@@ -10,7 +10,7 @@ class PluginGmappost_ModuleTopic_MapperTopic extends PluginGmappost_Inherit_Modu
                 WHERE
                     _t.topic_id = ?d ";
 
-        $this->oDb->query($sql, $oTopic->getgLat(), $oTopic->getgLong(), $oTopic->getId());
+        $this->oDb->query($sql, $oTopic->getgLat(), $oTopic->getgLng(), $oTopic->getId());
 
         return true;
     }

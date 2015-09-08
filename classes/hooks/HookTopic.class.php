@@ -34,7 +34,7 @@ class PluginGmappost_HookTopic extends Hook
 
         if ($oTopic) {
             $lat = $oTopic->getgLat();
-            $long = $oTopic->getgLong();
+            $long = $oTopic->getgLng();
         } else {
             $lat = 0;
             $long = 0;
@@ -54,10 +54,10 @@ class PluginGmappost_HookTopic extends Hook
         $oTopic = $data['oTopic'];
         if ($lat && $long) {
             $oTopic->setgLat($lat);
-            $oTopic->setgLong($long);
+            $oTopic->setgLng($long);
         } else {
             $oTopic->setgLat(null);
-            $oTopic->setgLong(null);
+            $oTopic->setgLng(null);
         }
         $this->Topic_UpdateGeoData($oTopic);
     }

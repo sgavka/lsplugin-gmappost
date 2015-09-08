@@ -36,7 +36,7 @@ class PluginGmappost_ActionAjax extends PluginGmappost_Inherit_ActionAjax
                 't_id' => $oTopic->getId(),
                 'gps' => array(
                     round($oTopic->getgLat(), 8),
-                    round($oTopic->getgLong(), 8)
+                    round($oTopic->getgLng(), 8)
                 ),
                 'url' => $oTopic->getUrl(),
                 'name' => $oTopic->getTitle(),
