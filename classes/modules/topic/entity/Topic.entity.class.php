@@ -9,6 +9,6 @@ class PluginGmappost_ModuleTopic_EntityTopic extends PluginGmappost_Inherit_Modu
 
     public function setgLng($coord)
     {
-        $this->_aData['topic_g_long'] = $coord;
+        $this->_aData['topic_g_lng'] = $coord;
     }
 }
